@@ -15,6 +15,20 @@ when listening to your tracks on HypeMachine.
 
 TODO
 
+### Repo Organization
+
+The code is organized as follows:
+
+- the [manifest](manifest.json) is located at the top of the repo
+- [background](background) contains background scripts
+  - [background-lastfm](background/background-lastfm.js) contains the code for connecting and updating track info to Last.fm
+  - [background-hypem](background/background-hypem.js) gives access to the track info provided by the content script
+  - [background](background/background.js) keeps track of the running state and updates the info to Last.fm
+- [browser-action](browser-action) is where the code for the popup (i.e. the user interface) can be found
+- [content-scripts](content-scripts) contains the content script that will be execute on hypem.com
+- [images](images) contains all icons and images
+- [lib](lib) contains libraries
+
 ### License
 
 NowPlaying - HypeMachine is licensed under the [GNU General Public License version 3.0](LICENSE.txt).
