@@ -11,11 +11,39 @@ Using NowPlaying - Hypemachine and HypeMachine's native scrobbling feature toget
 This means that you can now use an application like [NowPlaying](http://github.com/volkerl/releases)
 when listening to your tracks on HypeMachine.
 
-### Usage
+## Usage
 
-TODO
+The extension can be downloaded from the Chrome Web Store by clicking [here](https://chrome.google.com/webstore/detail/nowplaying-hypemachine/dadplfmhpmchkhbhanoeaeagojlpafab).
 
-### Repo Organization
+After installing it, an icon will appear in the right upper corner of your browser window.
+If the icon is red, it means the extension is currently not updating your track info to Last.fm.
+A green icon will indicate that the extension is active, and will update your track info to Last.fm.
+
+If you click on the icon, a popup will appear.
+This is the main window of the application.
+
+First you should connect to Last.fm, otherwise we can not update your track info.
+You can do this by clicking the black 'connect' button.
+A browser tab will open and send you to Last.fm where you can authorize this application.
+To check if you are authorizing the proper application, make sure it sais VolkerLastFm.
+After this is completed, you can open the popup again.
+You might have to press 'connect' again, but this time it should immediately connect and change the button to 'disconnect'.
+
+Now that we are connected to Last.fm we can upload your track info to Last.fm.
+To start this process click the big red button at the bottom of the popup.
+If it turns green the application is started.
+
+The final step is to start listening.
+Navigate to [HypeMachine](http://hypem.com) and start listening.
+Your track information should now be uploaded to Last.fm.
+To see if it is registering your track, open the popup and check if the correct information is shown in the 'Latest Song' section in the middle of the popup.
+If you already had a tab open with HypeMachine before you installed the extension, please refresh the page.
+Otherwise the extension won't be able to see your current track.
+
+If it is not registering your tracks and you already refreshed the HypeMachine page,
+please create an issue on the [Github page](https://github.com/volkerl/nowplaying-hypemachine/issues) so I can try to help.
+
+## Repo Organization
 
 The code is organized as follows:
 
@@ -29,7 +57,7 @@ The code is organized as follows:
 - [images](images) contains all icons and images
 - [lib](lib) contains libraries
 
-### License
+## License
 
 NowPlaying - HypeMachine is licensed under the [GNU General Public License version 3.0](LICENSE.txt).
 

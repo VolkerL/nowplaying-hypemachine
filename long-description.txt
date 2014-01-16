@@ -1,0 +1,29 @@
+NowPlaying - HypeMachine is a Chrome browser extension that can tell Last.fm what you are currently listening to on HypeMachine.
+
+HypeMachine already scrobbles your tracks to your Last.fm profile after they have been playing for a while, but that is only half of the actual scrobbling process. This Chrome extension will do the other half. It notifies Last.fm about which track is currently playing.
+
+Using NowPlaying - Hypemachine and HypeMachine's native scrobbling feature together will result in a proper scrobbling process.
+This means that your current playing song will be returned by the Last.fm user.getRecenTracks api call.
+
+---------------
+Issues, Bugs, Questions and Source
+
+The project is maintained on GitHub: http://github.com/volkerl/nowplaying-hypemachine.
+Please report any questions or issues there as well: http://github.com/volkerl/nowplaying-hypemachine/issues.
+
+---------------
+License
+
+Copyright (C) 2014  Volker Lanting
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    See http://www.gnu.org/licenses/gpl-3.0.txt for the full license.
