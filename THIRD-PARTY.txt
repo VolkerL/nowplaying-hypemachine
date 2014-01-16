@@ -1,0 +1,12 @@
+The on and off icons are (derived of) work made by oxygen: http://openiconlibrary.sourceforge.net/gallery2/?./Icons/status/user-online-2.png,
+and licensed under the CC BY-SA 3.0 license (http://creativecommons.org/licenses/by-sa/3.0/).
+
+The connect/disconnect button is made available through css code provided by http://webdesignerwall.com/tutorials/css3-gradient-buttons,
+and is made available unlicensed.
+
+This chrome extension uses services offered by the Last.fm api (http://last.fm/api).
+
+The MD5 algorithm used is owned by webtoolkit and available from http://www.webtoolkit.info/javascript-md5.html#.UtZBS_RDtZh.
+It is licensed under CC BY 2.0 UK (http://creativecommons.org/licenses/by/2.0/uk/).
+
+jQuery version 2.0.3 is used, licensed under the MIT license (https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt).

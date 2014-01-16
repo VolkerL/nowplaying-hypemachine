@@ -1,0 +1,234 @@
+/*	
+	This file is part of NowPlaying - HypeMachine, a chrome extension to
+	register the track currently playing on HypeMachine as nowplaying
+	track on Last.fm.
+    Copyright (C) 2014  Volker Lanting
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+.statusField {
+	white-space: nowrap;
+}
+
+#scrobbleBtn {
+	background-image: url('../images/off.png');
+	width: 64px;
+	height: 65px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	cursor: pointer;
+}
+
+body {
+	min-width: 250px;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(rgb(225, 245, 250), rgb(245, 255, 255));
+	background: -webkit-linear-gradient(rgb(225, 245, 250), rgb(245, 255, 255));
+	color: rgb(100, 100, 100);
+}
+
+a {
+	color: rgb(239, 116, 26);
+}
+
+h3 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0;
+	margin-right: 0;
+	color: rgb(239, 116, 26);
+}
+
+h4 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0;
+	margin-right: 0;
+	color: rgb(239, 116, 26);
+}
+
+div.aboutbox {
+	position: relative;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 0;
+	border-top: 1px dashed rgb(150, 150, 170);
+	padding-top: 10px;
+}
+.aboutbox h4 {
+	text-align: center;
+}
+span.copyright {
+	font-size: 0.8em;
+	color: rgb(125, 125, 125);
+}
+#aboutBtns {
+	text-align: center;
+	padding-top: 10px;
+}
+#about {
+	margin-top: 10px;
+}
+#license {
+	margin-top: 10px;
+	font-size: 0.8em;
+}
+span.disclaimer {
+	margin-top: 15px;
+	font-size: 10px;
+}
+
+div.content {
+	position: relative;
+	overflow: hidden;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 0;
+	border-top: 1px dashed rgb(150, 150, 170);
+	padding-top: 10px;
+}
+div.hline {
+	height: 10px;
+	width: 100%;
+	border-bottom: 1px dashed rgb(150, 150, 170);
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+
+div.header {
+	position: relative;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#aboutBtn {
+	color: rgb(135, 135, 135);
+	cursor: pointer;
+	position: absolute;
+	top: 15px;
+	left: 25px;
+	font-size: 0.8em;
+}
+div.logo {
+	width: 64px;
+	height: 64px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url('../images/icon64.png');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+div.footer {
+	width: 100%;
+	padding: 0;
+	position: relative;
+}
+div.footerblue {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	max-height: 4px;
+	min-height: 4px;
+	background-color: rgb(183, 182, 212);
+	z-index: -1;
+}
+div.mountain {
+	background-repeat: no-repeat;
+	background-image: url('../images/mountain.png');
+	background-position: left bottom;
+	min-width: 200px;
+	max-width: 200px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	padding-right: 0;
+	min-height: 70px;
+}
+
+/* horizontal alignment of variable width stuff : http://www.tightcss.com/centering/center_variable_width.htm*/
+div.horizontal-float-container {
+	overflow: hidden;
+	position: relative;
+}
+div.horizontal-float-outer {
+	position: relative;
+	left: 50%;
+	float : left;
+}
+div.horizontal-float-inner {
+	position: relative;
+	left: -50%;
+	float : left;
+	text-align: center;
+}
+
+
+/* Thank you: http://webdesignerwall.com/tutorials/css3-gradient-buttons */
+.button {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	font: 14px/100% Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding: .5em 2em .55em;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	-webkit-border-radius: .5em; 
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.button:hover {
+	text-decoration: none;
+}
+.button:active {
+	position: relative;
+	top: 1px;
+}
+.black {
+	color: #d7d7d7;
+	border: solid 1px #333;
+	background: #333;
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+	background: -moz-linear-gradient(top,  #666,  #000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
+}
+.black:hover {
+	background: #000;
+	background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+	background: -moz-linear-gradient(top,  #444,  #000);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+}
+.black:active {
+	color: #666;
+	background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#444));
+	background: -moz-linear-gradient(top,  #000,  #444);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#666666');
+}

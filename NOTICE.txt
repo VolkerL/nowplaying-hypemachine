@@ -1,0 +1,19 @@
+# NowPlaying - HypeMachine
+
+NowPlaying - HypeMachine allows you to notify Last.fm of the track you are currently playing on HypeMachine.
+
+HypeMachine already allows you to scrobble your tracks to Last.fm,
+but they are only scrobbled after they have been playing for a while.
+Last.fm also allows applications to tell what track is currently playing.
+This allows other applications, like the NowPlaying application (http://github.com/volkerl/nowplaying/releases),
+to query your current playing track.
+
+NowPlaying - Hypemachine, 
+Copyright 2014 Volker Lanting
+
+## License
+
+This program is licensed under the GNU General Public License version 3.
+The license can be found in LICENSE.txt.
+This program uses software and images provide by third parties.
+More information on these third parties and their licenses can be found in THIRD-PARTY.

@@ -1,0 +1,127 @@
+﻿<!--	
+	This file is part of NowPlaying - HypeMachine, a chrome extension to
+	register the track currently playing on HypeMachine as nowplaying
+	track on Last.fm.
+    Copyright (C) 2014  Volker Lanting
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>HypeMachien music tracking</title>
+	<link href="popup.css" rel="stylesheet" type="text/css">
+	<script src="../lib/jquery2.0.3.js"></script>
+	<script src="popup.js"></script>
+</head>
+<body>
+	<div class="header">
+		<a id="aboutBtn">about</a>
+		<div class="logo"></div>
+	</div>
+
+	<div class="aboutbox">
+		<h4>NowPlaying - HypeMachine</h4>
+		<div id="about">
+			<p>This chrome extension can tell Last.fm what you are currently listening to on HypeMachine.</p>
+			
+			<p>It will not cause tracks to appear in your Last.fm track history, for that just enable the scrobbling feature offered by HypeMachine.</p>
+			
+			<p>
+			Instead, the track will appear as 'nowplaying', alowing other applications like
+			<a href="http://github.com/volkerl/nowplaying/releases" target="_blank">NowPlaying</a> to retrieve this data.
+			</p>
+		</div>
+		<div id="license">
+			<p>
+				This program is free software: you can redistribute it and/or modify
+				it under the terms of the GNU General Public License as published by
+				the Free Software Foundation, either version 3 of the License, or
+				(at your option) any later version.
+
+				This program is distributed in the hope that it will be useful,
+				but WITHOUT ANY WARRANTY; without even the implied warranty of
+				MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+				GNU General Public License for more details.
+			</p>
+		</div>
+		<div id="aboutBtns">
+			<a id="licenseBtn" class="button black">License info</a>
+		</div>
+		<div class="hline"></div>
+		<div>
+			<span class="copyright">
+				Copyright 2014 Volker Lanting<br/>
+				Licensed under <a href="http://www.gnu.org/licenses/gpl-3.0.txt" target="_blank">GPLv3</a>
+			</span>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="horizontal-float-container">
+			<div class="horizontal-float-outer">
+				<div class="horizontal-float-inner">
+					<h3>Last.fm Configuration</h3>
+					<span class="statusField">
+						Status:&nbsp;<span id="status">Not Connected</span>
+					</span>
+					<br/>
+					<a id="connectBtn" class="button black">
+						Connect to Last.fm
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="hline"></div>
+
+		<div class="horizontal-float-container">
+			<div class="horizontal-float-outer">
+				<div class="horizontal-float-inner">
+					<h3>
+						Latest Song:
+					</h3>
+					<span id="currSong"></span>
+					<br/>
+					<span id="currArtist"></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="hline"></div>
+
+		<div class="horizontal-float-container">
+			<div class="horizontal-float-outer">
+				<div class="horizontal-float-inner">
+					<h3>Update to Last.fm</h3>
+					<span class="statusField">
+						Status:&nbsp;<span id="runningStatus">Not Running</span>
+					</span>
+					<div id="scrobbleBtn"></div>
+					<span class="statusField">
+						Start/Stop updating to Last.fm
+					</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="footer">
+		<div class="mountain"></div>
+		<div class="footerblue"></div>
+	</div>
+  </body>
+</html>
